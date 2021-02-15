@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #ecf0f1;
 }
-
-.App-logo {
-  height: 40vmin;
+.Wrapper {
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+.Carousel {
+  line-height: 300px;
+  height: 300px;
+  position: relative;
+  width: 500px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.Carousel-slide {
+  color: #fff;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 500ms, opacity 500ms;
+  font-size: 30px;
+}
+@media (max-width: 500px) {
+  .Carousel {
+    width: 60%;
+ }
+}
+.Carousel-slide--previous {
+  z-index: 0;
+  transform: translate(-90%) scale(0.5);
+  opacity: 0;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Carousel-slide--left {
+  z-index: 1;
+  transform: translate(-60%) scale(0.8);
+  opacity: 0.7;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Carousel-slide--active {
+  z-index: 2;
 }
-
-.App-link {
-  color: #61dafb;
+.Carousel-slide--right {
+  z-index: 1;
+  transform: translate(60%) scale(0.8);
+  opacity: 0.7;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Carousel-slide--next {
+  transform: translate(90%) scale(0.5);
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.Buttons {
+  margin: 20px 0 50px;
+}
+.Buttons button {
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 18px;
+  transition: all 300ms;
+  outline: none;
+}
+.Buttons button:focus {
+  box-shadow: 0 0 0 4px #ddd;
+}
+.Buttons button:hover:not(:disabled) {
+  color: #2980b9;
+  border-color: #2980b9;
+  cursor: pointer;
+}
+.Buttons button:disabled {
+  opacity: 0.5;
 }

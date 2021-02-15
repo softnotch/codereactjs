@@ -1,0 +1,27 @@
+/* #profile{
+    margin-top: 130px;
+}
+#profile-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px
+}
+.profile-content .features-img img{
+    padding-left: 70px;
+}
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+} */
