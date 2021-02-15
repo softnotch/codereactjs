@@ -15,8 +15,8 @@ import Php from './Php';
 import { BrowserRouter as Router, Switch, Link, Route  } from 'react-router-dom';
 import Service from './Service';
 import Product from './Product';
-// import { Carousel } from 'bootstrap';
-import Carousel from './Testimonial';
+import Testimonials from './Testimonials';
+import Footer from './Footer';
 
 
 
@@ -48,7 +48,8 @@ const Home = () => {
       <Slider /> 
       <Service />
       <Product />
-      <Carousel />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

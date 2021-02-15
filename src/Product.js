@@ -60,6 +60,21 @@ function Product() {
                              </Figure>
                            
                         </Col>
+                        <Col sm>
+                        <Figure>
+                                <Figure.Image
+                                    width={171}
+                                    height={180}
+                                    alt="171x180"
+                                    src={l}
+                                    roundedCircle 
+                                />
+                                <Figure.Caption>
+                                    ugue mollis interdum.
+                                </Figure.Caption>
+                             </Figure>
+                           
+                        </Col>
                     </Row>
             </Container>
         </div>
